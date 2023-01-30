@@ -1,0 +1,16 @@
+CARS DATABASE
+
+ID                      intero      SMALLINT        PRIMARY_KEY     AUTO_INCREMENT
+VIN                     stringa     VARCHAR(17)     NOTNULL         UNIQUE
+Marca                   stringa     VARCHAR(20)     NOTNULL
+Segmento                stringa     VARCHAR(1)      NULL
+Modello                 stringa     VARCHAR(20)     NOTNULL
+Auto disponibili        intero      TINYINT         NOTNULL         DEFAULT(0)
+Generazione (anno)      date        YEAR            NULL
+Peso (kg)               float       FLOAT(5,1)      NOTNULL
+Lunghezza (cm)          float       FLOAT(5,2)      NOTNULL
+Larghezza (cm)          float       FLOAT(5,2)      NOTNULL
+Altezza (cm)            float       FLOAT(5,2)      NOTNULL
+Consumi (L/100km)       float       FLOAT(3,1)      NOTNULL
+Potenza (kW)            intero      SMALLINT        NOTNULL
+Cilindrata  (cc)        intero      SMALLINT        NOTNULL
